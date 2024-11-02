@@ -18,6 +18,7 @@ WORKDIR /root
 RUN rm -rf llvm-project
 
 COPY llvm_config.sh .
+RUN chmod +x llvm_config.sh
 
 # add these env in github action, so we do not need to set them here.
 
