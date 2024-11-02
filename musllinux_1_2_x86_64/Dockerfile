@@ -17,6 +17,8 @@ RUN cmake --install build --config Release --prefix /usr/local
 WORKDIR /root
 RUN rm -rf llvm-project
 
+COPY llvm_config.sh .
+
 # add these env in github action, so we do not need to set them here.
 
 # ENV LIBCLANG_PATH=/usr/local/lib
