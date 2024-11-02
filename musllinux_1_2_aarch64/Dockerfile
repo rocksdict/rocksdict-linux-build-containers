@@ -10,6 +10,7 @@ RUN cmake -S llvm -B build \
     -DLLVM_ENABLE_PROJECTS="clang;lld" \
     -DCMAKE_BUILD_TYPE=Release \
     -DLLVM_PARALLEL_COMPILE_JOBS=4 \
+    -DLIBCLANG_BUILD_STATIC=ON \
     -DLLVM_PARALLEL_LINK_JOBS=4
 RUN cmake --build build --parallel 4 --config Release
 RUN cmake --install build --config Release --prefix /usr/local
