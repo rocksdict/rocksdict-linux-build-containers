@@ -2,7 +2,7 @@ FROM quay.io/pypa/musllinux_1_2_aarch64
 
 WORKDIR /root
 
-RUN git clone --depth 1 --branch llvmorg-19.1.3 https://github.com/llvm/llvm-project.git
+RUN git clone --depth 1 --branch llvmorg-20.1.5 https://github.com/llvm/llvm-project.git
 
 WORKDIR /root/llvm-project
 RUN cmake -S llvm -B build \

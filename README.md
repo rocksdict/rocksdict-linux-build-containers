@@ -2,7 +2,7 @@
 
 Containers for building manylinux wheels in gihub action.
 
-Full llvm/clang-19 installed for optimized wheel builds.
+Full llvm/clang-20 installed for optimized wheel builds.
 
 You don't need this for running rocksdict in python.
 
